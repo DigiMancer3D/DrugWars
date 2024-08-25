@@ -1,0 +1,1943 @@
+<!DOCTYPE HTML>
+   <a id='link' name='link' align='center' style='align:center'>
+<html id='html'>
+<head>
+ <title>Drug Wars
+ </title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta property="og:url" content="The attempt to recreate Dope Wars.">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <html manifest="DW_game.appcache">
+ </meta>
+<link rel="icon" type="image/x-icon" href="">
+  </head>
+<script src="https://ipfs.io/ipfs/QmbegCCnE3RFReHYf45wCetXSKHVEy95bJruVpYkDDY8tm"></script>
+<style id='style'>
+
+ body {
+  font-size: 150%;
+  overflow-x: none;
+  scroll-x: none;
+  scroll-behavior: smooth;
+  width:98%;
+  padding: 0.25vw;
+  display:flex;
+  word-break:break-all;
+  }
+  
+  #iframe, iframe {
+  width:100%;
+  align:center;
+  margin: 0px;
+  padding:0px;
+  position: relative;
+  display:flex;
+  }
+
+hr {
+border-style: outset;
+border-width: 1.5px;
+border-color: silver;
+}
+
+ * {
+  backface-visibility: hidden;
+ }
+ 
+ .footer {
+  postion: fixed;
+  bottom: 0;
+  left: 0;
+  width: 96%;
+  z-index: 1;
+ }
+ 
+
+
+ html {
+  scroll-behavior: smooth;
+  overflow-x: none;
+  scroll-y: smooth;
+  scroll-x: none;
+  -webkit-scroll-behavior: smooth;
+  x-scroll: none;
+  y-scroll: smooth;
+  -moz-scroll-behavior: smooth;
+-ms-scroll-behavior: smooth;  
+text-shadow: 0px 0px 0.69px green;
+display:flex;
+  height: auto;
+ }
+
+ #html {
+  scroll-behavior: smooth;
+  overflow-x: none;
+  scroll-y: smooth;
+  scroll-x: none;
+  -webkit-scroll-behavior: smooth;
+  x-scroll: none;
+  y-scroll: smooth;
+  -moz-scroll-behavior: smooth;
+-ms-scroll-behavior: smooth;  
+text-shadow: 0px 0px 0.69px green;
+  width: 100%;
+  align:center;
+ }
+ 
+ 
+ button {
+ background-color: inherit;
+ color: inherit;
+ border-radius: 50%;
+ font-size: 115%;
+ margin-top: 3vw;
+ margin-left: 7px;
+ margin-right: 7px;
+ }
+ 
+ 
+ .button {
+ background-color: inherit;
+ color: inherit;
+ border-radius: 50%;
+ font-size: 50%;
+ margin-top: 1.3vw;
+ align: left;
+ left: 0;
+ margin-right: 1.3vw;
+ cursor: pointer;
+ }
+ 
+ 
+ 
+ .button2 {
+ background-color: inherit;
+ color: inherit;
+ border-radius: 50%;
+ font-size: 50%;
+ 
+ margin-top: 1.3vw;
+ align: right;
+ right: 0;
+ margin-left: 1.3vw;
+ cursor: pointer;
+ border-style: outset;
+ }
+ 
+ 
+ .button:hover, .button2:hover {
+ border-color: green;
+ box-shadow: 0px 1px 9px grey;
+ border-radius: 75%;
+ font-size: 55%;
+ padding: 4px 14px;
+ cursor: pointer;
+ margin-top:-1.5px;
+ margin-bottom:-1px;
+ margin-left: 8px;
+ margin-right: -4px;
+ border-style: outset;
+ }
+ 
+ 
+ .button:disabled, .button2:disabled {
+ border-color: dimgrey;
+ box-shadow: 0px 0px 1px dimgrey;
+ border-radius: 75%;
+ font-size: 50%;
+ cursor: default;
+ border-style:inset;
+ }
+ 
+ .footer{
+  postion: fixed;
+  bottom:0;
+  left:0;
+  width:98%;
+ }
+   
+ .marspan {
+  padding-left:10vw;
+  padding-right:40vw;
+  }
+ 
+  .marquee {
+   border-left: 2.25px solid green;
+   border-right: 2.25px solid green;
+   font-size: 2.25vw;
+   width: 96%;
+   margin-bottom: 0.5%;
+   marign-right: -0.75%;
+   margin-left: 1px;
+  }
+  
+  
+ .themebut {
+ color:orange;
+ text-color: 0vw 0vw 9vw orange;
+ margin: 0.15vw 1.75vw;
+ padding: 0.15vw 1.5vw;
+ }
+ 
+ .maintheme {
+  background-color: black;
+  color: silver;
+  border-color:silver;
+  }
+ 
+ .subtheme {
+  background-color: RGB (249, 251, 255);
+  color:  RGB (13, 19, 26);
+  border-color: RGB (245, 242, 232);
+  }
+ 
+ 
+ .maintxt {
+  align:center;
+ }
+ 
+ .subt1 {
+  align:left;
+  left:0;
+  }
+  
+  .subt2 {
+  align:right;
+  right:0;
+  }
+ 
+ input {
+ background: inherit;
+ color: inherit;
+ border-bottom-color: dimgrey;
+ border-right-color: silver;
+ border-left-color: grey;
+ border-top-color: silver;
+ border-style: groove;
+ border-width: 1px;
+ font-size: 95%;
+ align: center;
+ text-align: center;
+ width: 59%;
+ placeholder-color: white;
+ caret-color: limegreen;
+ caret-width: 3px;
+ input-flex: 1;
+ scroll: none;
+ autocomplete: off;
+ }
+ 
+ .input {
+ width: 90%;
+ }
+ 
+ 
+ input:hover {
+ border-color:limegreen;
+ border-style: outset;
+ border-size: 3px;
+ }
+ 
+ 
+ #main {
+ 
+ display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+ }
+ 
+
+ #box1 {
+ flex-order: 1;
+ width: 96vw;
+ }
+ 
+ #autodata, #aub4 {
+ flex-order: 2;
+ width: 96vw;
+ }
+ 
+ #box2 {
+ flex-order: 3;
+ width: 96vw;
+ }
+
+ #autodata2 {
+ flex-order: 4;
+ width: 96vw;
+ }
+ 
+ #insl {
+ 
+ text-align: center;
+ flex-order: 5;
+ }
+ 
+ #insc {
+ 
+ text-align: center;
+ flex-order: 6;
+ }
+ 
+ #insr {
+ flex-order: 7;
+ 
+ text-align: center;
+ }
+ 
+ 
+ #magic {
+ flex-order:8;
+ }
+ 
+ #pack {
+ flex-order: 9;
+ }
+ 
+ .stroke {
+ text-decoration:line-through;
+ }
+ 
+ textarea {
+  resize: none;
+  overflow: hidden;
+  min-height: 50px;
+  max-height: 100px;
+  }
+ 
+ @media only screen and (min-width: 10.1in) { <!-- Desktop View -->
+
+ #marqen {
+   margin-bottom: 0.25%; 
+  margin-top: -0.8%; 
+ }
+ 
+ #tophold {
+ flex-order: 5;
+ width: 96vw;
+ margin: auto;
+ }
+ 
+ #insl{
+ flex: 31vw;
+ margin: auto;
+ flex-order: 6;
+ font-size:125%;
+ border-left: 0px outset silver;
+ border-right: 0px inset silver;
+ border-top: 0px inset silver;
+ }
+ 
+ #insc{
+ flex: 31vw;
+ margin: auto;
+ flex-order: 7;
+ font-size:125%;
+ border: 1.5px outset silver;
+ }
+ 
+ #insr{
+ flex: 31vw;
+ margin: auto;
+ flex-order: 8;
+ font-size:125%;
+ border-right: 0px outset silver;
+ border-left: 0px outset silver;
+ border-top: 0px outset silver;
+ }
+ 
+ 
+ #magic {
+ flex-order:9;
+ flex: 47vw;
+ margin: auto;
+ font-size:125%;
+ }
+ 
+ #pack {
+ flex-order: 10;
+ flex: 47vw;
+ margin: auto;
+ font-size:125%;
+ }
+
+ #hrskills, #armhr {
+ display:block;
+ }
+ 
+ #hhr, #brbr, #hrc, .brs, #skillshr, #hrp {
+ display:none;
+ }
+ 
+}  
+   
+ @media only screen and (min-width: 7.9in) and (max-width: 10.1in) { <!-- Tablet & iPad View -->
+  
+ #marqen {
+   margin-bottom: 0.25%; 
+  margin-top: -0.67%; 
+ }
+ 
+ #tophold {
+ flex-order: 5;
+ width: 95vw;
+ margin: auto;
+ }
+ 
+ #insl{
+ flex: 47vw;
+ margin: auto;
+ flex-order: 6;
+ font-size:125%;
+ }
+ 
+ #insc{
+ flex: 47vw;
+ margin: auto;
+ flex-order: 7;
+ font-size:125%;
+ }
+ 
+ #insr{
+ flex: 47vw;
+ margin: auto;
+ flex-order: 8;
+ font-size:125%;
+ }
+ 
+ #magic {
+ flex-order:9;
+ flex: 47vw;
+ margin: auto;
+ font-size:125%;
+ }
+ 
+ #pack {
+ flex-order: 10;
+ flex: 94.5vw;
+ margin: auto;
+ font-size:125%;
+ }
+ 
+ .brs, #hrskills {
+ display:block;
+ }
+ 
+  #brbr, #hrc, #skillshr {
+ display:none;
+ }
+ 
+ #hhr {
+ display:none;
+ }
+ 
+}
+  
+ @media only screen and (max-width: 7.9in) { <!-- Mobile View -->
+
+ #marqen {
+   margin-bottom: 0.25%; 
+  margin-top: -0.5%; 
+ }
+ 
+ #body {
+ width: 95vw;
+ }
+ 
+ #main {
+ flex column;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ order: 1;
+ font-size:95%;
+ border-left: 1.5px outset silver;
+ border-right: 1.5px inset silver;
+ border-top: 1.5px inset silver;
+ border-bottom: 1.5px outset silver;
+ }
+ 
+ #tophold {
+ flex-order: 5;
+ width: auto;
+ margin: auto;
+ }
+ 
+ #insl{
+ flex: auto;
+ margin: auto;
+ flex-order: 6;
+ font-size:125%;
+ border-left: 1.5px outset silver;
+ border-right: 1.5px inset silver;
+ border-top: 0px inset silver;
+ }
+ 
+ #insc{
+ flex: auto;
+ margin: auto;
+ flex-order: 7;
+ font-size:125%;
+ border-left: 1.5px outset silver;
+ border-right: 1.5px inset silver;
+ }
+ 
+ #insr{
+ flex: auto;
+ margin: auto;
+ flex-order: 8;
+ font-size:125%;
+ border-left: 1.5px outset silver;
+ border-right: 1.5px inset silver;
+ }
+ 
+ 
+ #magic {
+ flex-order:9;
+ flex: auto;
+ width:94vw;
+ margin: auto;
+ font-size:125%;
+ border-left: 1.5px outset silver;
+ border-right: 1.5px inset silver;
+ }
+ 
+ #pack {
+ flex-order: 10;
+ flex: auto;
+ margin: auto;
+ font-size:125%;
+ border-left: 1.5px outset silver;
+ border-right: 1.5px inset silver;
+ border-bottom: 1.5px inset silver;
+ }
+ 
+ hr {
+ width: 93.5vw;
+ margin: 0.1vw 0.25vw;
+ align: center;
+ }
+ 
+ .brs, #armhr{
+ display:block;
+ }
+ 
+ #box1 {
+ width: 94.3vw;
+ align: center;
+ }
+ 
+ #allaud {
+ width: 94.3vw;
+ align:center;
+ }
+ 
+ #hrskills, #brbr, #skillshr {
+ display:inline-block;
+ }
+ 
+ #hhr{
+ display:none;
+ }
+ 
+}
+
+.drug, #drug{
+ margin-left:1.5vw;
+ margin-right:1.5vw;
+ margin-bottom:0.25vw;
+ white-space:nowrap;
+ word-break:break-word;
+ color:white;
+ }
+ 
+ #drugrow .drug:hover {
+  color:pink;
+ }
+ 
+ #drugrow .forsale:hover {
+  color:red;
+ }
+ 
+ #trunkrow .drug:hover {
+  color:lightgreen;
+ }
+  
+ </style>
+ 
+ 
+ <body id="body" class="maintheme" onload="window.scrollTo(0,0);" >
+  <div id="main" class="maintheme" onload="window.scrollTo(0,0)" >
+  <div id='box1' style='max-width:99vw;align:center;width:auto'>
+  <span id='thold0' style="cursor:default;white-space:nowrap;" ><h1 id="maintxt" title="A Dope Wars Imitation">Drug Wars&nbsp; &nbsp;<sub><sup><sub id='daytext' style='visibility:hidden'>Day <i id="dayof" title="Days Survived" ></i><i id='leftofday' title='Current Hour'></i> <hr style='color:silver;opacity:0.7;'></sub></sup></sub></span></h1>
+   <span><div id='thold1' align="center" style="cursor:default;" >
+   
+   <h3 style="color:green">
+   
+   <span id="coh" title="Cash on Hand" style="margin-left:0.75vw;text-align:left;">Cash:<b id="cash" title="Cash Total" style="margin-left:15vw;white-space:nowrap;word-break:break-word;">0</b>$</span> 
+   </td><td>
+   <span id="broll" title="Cash in Bank" style="margin-left:15vw;text-align:right;margin-right:0.75vw;">Fiat:<b id="bank" title="Bank Total" style="margin-left:15vw;white-space:nowrap;word-break:break-word;">0</b>$</span>
+   </h3>
+   
+   <h3><span id="bcred" title="Credit wit Bank" style="margin-left:0.75vw;text-align:left;color:rgb(71,133,89)">Credit:<b id="credit" title="Credit Total"  style="margin-left:15vw;color:rgb(71,133,89);white-space:nowrap;word-break:break-word;">0</b>$</span><span id="debttotal" title="Debts in Total" style="margin-left:15vw;text-align:right;margin-right:0.75vw;color:red">Debt:<b id="debt" title="Debt Total"  style="margin-left:15vw;white-space:nowrap;word-break:break-word;">0</b>$</span></h3>
+   <h5 align="center"><i><b style="text-align:left;margin-right:65vw;">/\ Finances</b><hr style="width:75%;align:center;"><b style="text-align:right;margin-left:65vw;">Physicals \/</b></i></h5>
+   <h3 style="color:yellow"><span id="guntotal" title="Guns" style="margin-left:0.75vw;text-align:left;">Guns:<b id="guns" title="Guns Total"  style="margin-left:20vw;white-space:nowrap;word-break:break-word;">0</b></span> <span id="mentotal" title="People" style="margin-left:15vw;text-align:right;margin-right:0.75vw;">PPL:<b id="men" title="People Total"  style="margin-left:20vw;white-space:nowrap;word-break:break-word;">0</b></span></h3>
+  
+   <h3><span id="landtotal" title="Locations" style="margin-left:0.75vw;text-align:left;color:blue">Locs: <b id="loc" title="Loc Total"  style="margin-left:20vw;color:blue;white-space:nowrap;word-break:break-word;">0</b></span> <span id="rivaltotal" title="Rivals" style="margin-left:15vw;text-align:right;margin-right:0.75vw;color:red">RVL:<b id="rival" title="Rivals Total"  style="margin-left:20vw;color:red;white-space:nowrap;word-break:break-word;">0</b></span></h3>
+    <hr style='color:silver;opacity:0.7;'>
+   </div>
+   
+   
+   <div id='thold2'  align="center" style="cursor:pointer;max-width:99vw;width:99vw;" ><h5 style="align:left;margin-right:73vw;left:1;"><b id='btntitle'>Actions<i>:&nbsp;</i></b>
+   <div id='actionsbox' style="margin-left:10.5vw;margin-right:0.5vw;width:70vw;text-align:center;">
+   <table>
+   <tr>
+   <td>
+   <button class="button2" id="buttona" onclick="buy()" title="Buy Phresh Cash"  style="margin-left:8.75vw;" disabled><h3>Buy</h3></button>
+   <button class="button2" id="buttonb" onclick="lend()" title="Get a Loan"  style="margin-left:0.75vw;"><h3>Borrow</h3></button>
+   </td><td>
+   <button class="button2" id="button1" onclick="search()" title="'Discover' Drugs"  style="margin-left:10.75vw;" disabled>Discover</button>
+   <button class="button2" id="button2" onclick="earn()" title="Sell Drugs"  style="margin-left:0.75vw;" disabled>Deal</button>
+   <button class="button2" id="button3" onclick="find()" title="Test a Takeover"  style="margin-left:0.75vw;" disabled>Find Land</button>
+   <button class="button2" id="button4" onclick="hunt()" title="Test Removing a Rival"  style="margin-left:0.75vw;" disabled>Hunt Rival</button>
+   </td></tr style="opacity:0"><tr><td>
+   <button class="button2" id="buttonc" onclick="sell()" title="Buy Shady Credits"  style="margin-left:8.75vw;" disabled><h3>Sell</h3></button>
+   <button class="button2" id="buttond" onclick="payoff()" title="Pay Off Debts"  style="margin-left:0.75vw;" disabled><h3>Return</h3></button>
+   </td><td>
+   <button class="button2" id="button5" onclick="send()" title="Send a Unit"  style="margin-left:10.75vw;" disabled>Send Merc</button>
+   <button class="button2" id="button6" onclick="grow()" title="Grow a Unit"  style="margin-left:0.75vw;" disabled>Fill Merc</button>
+   <button class="button2" id="button7" onclick="hire()" title="Find a Unit"  style="margin-left:0.75vw;" disabled>Hire Merc</button>
+   <button class="button2" id="button8" onclick="fire()" title="Fire a Merc"  style="margin-left:0.75vw;" disabled>Fire Merc</button>
+  </td></tr></table>
+  <!-- Buy Cash with Bankroll -->
+  <!-- Sell Cash for Credit -->
+  <!-- Borrow a Loan of Bankroll -->
+  <!-- Return Bankroll or Cash to pay off loans -->
+  
+  <!--button
+        <!--a === buy()
+		<!--b === lend()
+		<!--c === sell()
+		<!--d === payoff()
+ -->
+  <!--button
+		<!--1 === search()
+		<!--2 === earn()
+		<!--3 === find()
+		<!--4 === send()
+		<!--5 === grow()
+		<!--6 === hire()
+		<!--7 === fire()
+ -->
+ 
+  <!-- play loop: get loan to get credit, buy cash, buy drugs on demand, sell to clients, sell excess cash for credit, use credit to pay off loan -->
+   
+    <hr style='color:silver;opacity:0.7;width:76vw;margin-left:4vw;'>
+   </div>
+  <table style="margin-top:0.05vw;margin-bottom:0.05vw;cursor:default;">
+   <tr class="hbar" style="max-width:99vw;max-height:28px;"><td style="align:left;text-align:right;width:8.5vw;white-space:nowrap;"><b>Health<i>:</i></b></td>&nbsp;<td style="margin-left:0.25vw;margin-right:0.75vw;height:26px;max-width:87vw;overflow:hidden;"><div id="health" style="background-color:red;color:white;text-align:center;width:86vw;white-space:nowrap;">100%</div></td> 
+   <!-- 86 === 100%; 64 === 75%; 43 === 50%; 21 === 25%; -->
+   </tr>
+   <tr class="gbar" style="max-width:99vw;max-height:28px;"><td style="align:left;text-align:right;width:8.5vw;white-space:nowrap;"><b>Gas<i>:</i></b></td>&nbsp;<td style="margin-left:0.25vw;margin-right:0.75vw;height:26px;max-width:87vw;overflow:hidden;"><div id="health" style="background-color:green;color:white;text-align:center;width:86vw;white-space:nowrap;">100%</div></td> 
+   <!-- 86 === 100%; 64 === 75%; 43 === 50%; 21 === 25%; -->
+   </tr></table>
+   </h5>
+   
+   </div></span>
+  
+   
+   </div>
+  </div>
+  
+  
+  <div style="cursor:pointer;align:center;margin-left:2.8vw;width:99vw;">
+  
+  <!-- (QTY)Product[cost] -->
+  
+  <table>
+  <td>
+  <div id="drugrow" style="width:44vw;background-color:dimgrey;color:white;align:left;text-align:left;">Drugs on Market (<b>DoM</b>)<i>:</i><hr>
+  <span id='marketlist'>
+  <span id='test-drug' class='drug' title='(QTY)Product[cost]' onclick='document.getElementById("drugswap").innerHTML = this.innerHTML;this.remove();buydrug();' style='display:none'>(9)test-drug[999]</span>
+  <span id='green' class='drug' title='(QTY)Product[cost]' onclick='document.getElementById("drugswap").innerHTML = this.innerHTML;this.remove();buydrug();'  style='display:none'>(1)green[1]</span>
+  </span>
+  
+  
+  </div>
+  </td>
+  
+  <td>
+  <div id="trunkrow" style="width:44vw;background-color:dimgrey;color:white;align:right;text-align:right;">Trunk Space<i>:</i><hr>
+  <span id='trunklist'>
+  <span id='test-drug' class='drug' title='(QTY)Product[cost]' onclick='document.getElementById("drugswap").innerHTML = this.innerHTML;selldrug();this.style.display="none";'  style='display:none'>(9)test-drug[999]</span>
+  <span id='green' class='drug' title='(QTY)Product[cost]' onclick='document.getElementById("drugswap").innerHTML = this.innerHTML;selldrug();this.style.display="none";'  style='display:none'>(99)green[1]</span>
+  </span>
+  </div>
+  </td></table>
+  
+  </div>
+  <hr>
+  </br>
+  <div style="width:99vw;text-align:center;align:center;margin:0.15vw;" id="display"><button class="button2" id="startgame" onclick="startgame();">Start Game</button></div>
+  </br>
+  <div style="width:99vw;text-align:center;align:center;margin:0.15vw;" id="output">--Test-OUTPUT--</div>
+  
+  
+  
+
+
+ <script src="https://ipfs.io/ipfs/QmbegCCnE3RFReHYf45wCetXSKHVEy95bJruVpYkDDY8tm"></script>
+ 
+<footer>
+  </br></br></br></br></br>
+  <div id='save' align='center' style='align:center;word-break:break-all'>
+   <button id='savebutton' class='button2' onclick='nextfun();'><h1>Save with Itty-Bitty</h1></button>
+   <span align="center" style="center"><span id='notice'><span id='shareon' ></span><span id='sharecheck'></span><hr><sup>To save your character sheet, click "Save Sheet". Saving will plot a LMZA compressed B64 hashlink containing the data you've input along with a copy of this webware.<sup></br></br>All information being inputted is only existing on your device & wihtin the browser.</br><sup>**<b>Node like servers are only used for saving into hashlinks & decoding the hashlink with this webware.</b>**</sup></sup></sup></span>	
+   </div>
+
+  
+   <div style="opacity:0.75;font-size:70%;bottom:0;color:grey;cursor:pointer;align:center;" align="center">
+   <span id="themes"></br>
+   <button class="button2" id="2theme" onclick="this.style='display:none';document.getElementById('1theme').style='display:inline-block';document.getElementById('main').style='background-color:rgb(249,251,255);color:rgb(13,19,26);border-color:rgb(245,242,232);left:0;align:left:width:100%;text-align:center;';document.getElementById('body').style='background-color:rgb(249,251,255);color:rgb(13,19,26);border-color:rgb(245,242,232);left:0;align:left:width:100%;text-align:center;';theme=0;"><h1>Paper Theme</h1></button>
+   <button class="button2" id="1theme" onclick="this.style='display:none';document.getElementById('2theme').style='display:inline-block';document.getElementById('main').className='display:inline-block';document.getElementById('main').style='background-color:black;color:silver;border-color:dimgrey;left:0;align:left:width:100%;text-align:center;';document.getElementById('body').style='background-color:black;color:silver;border-color:dimgrey;left:0;align:left:width:100%;text-align:center;';theme=1;" style="display:none"><h1>Night Theme</h1></button>
+   </br></span>
+   </br><sup><span id='hashishere'></span></br><button onclick="inphash();" classs="button2">[-<b id='butt' onclick="inphash();"></b>-]</button></sup></br>
+   <b id="learnmore" onclick='document.getElementById("lm").style="display:inline-block;border:0.5px inset orange;";this.style="visibility:hidden";' style="cursor:help" title="Learn more about iCS">Learn More</b></br></br>
+   <b onclick="window.open('https://3dthe.ninja')" target="_blank" rel="noreferrer;noopener;" title="Click to Visit 3Douglas' Website">&nbsp;&nbsp;Crafted by <i>3Douglas</i>&nbsp;&nbsp;</b></br><span style="cursor:default">Deoblou Corp. 2000-<span id="nyear"></span> &nbsp;®</br>Hodlserv Inc 2017-<span id="nyear2"></span> &nbsp;©</span></br><b id="itemlist" onclick='document.getElementById("ril").style="display:inline-block;border:0.5px inset orange;";this.style="visibility:hidden";' style="cursor:help" title="Find out types of items iCS can recgonize">Recgonized Items List</b></br><b id="openagreement" onclick='document.getElementById("license").style="display:inline-block;border:0.5px inset silver;";this.style="visibility:hidden";' style="cursor:help" title="The License Agreement for this web object">Unlocked License</b>
+   
+   
+   <span id="lm" style="display:none">
+   <h1 align="center">Origins, Algo & More</h1></br>
+   <p>&nbsp; &nbsp; &nbsp; &nbsp;Drug Wars (DW_game) was built by <b>3Douglas <q><i>3D</i></q> Pihl</b> based loosely on a screenshot of the old PC game, <q><i>Dope Wars</i>.</q>  The algorithms used are as follows:</br><div style='text-align:left;margin-left:2.5vw;margin-right:3vw;'><b>algo</b>: <i>explain algo here</i></br><b>algo</b>: <i>explain algo here</i></br>
+   
+   </div></br></br>
+   <h2 align="center" style="align:center">Details</h2>
+   
+   </br><p style="text-align:left;margin-left:2.5vw;margin-right:3vw;">stuff: yup</br>stuff: yup</br>
+   </p>
+   <span id="stats" style="display:none">
+   <h1 align="center">Stats <sup><sub><i>LIVE</i></sub></sup></h1></br>
+   <p id='statout'>
+   </p>
+   </span>
+   </p><button class="button2" onclick='document.getElementById("lm").style="display:none";document.getElementById("learnmore").style="visibility:show;";' style="cursor:pointer"><h1>X</h1></button></br></br></br>
+   </span>
+   
+   
+   <span id="license" style="display:none">
+   <h1 align="center">Unlocked License (<i>UnLicense</i>)</h1></br>
+   <p>&nbsp; &nbsp; &nbsp; &nbsp;The <q><i>Unlocked License</i></q> is a form of License that has only 2 stimpulations for validity, which are as follows: <ol>1) If previous credits are available & visiable without clicking anything or going anywhere.</ol><ol>2) if this license is available & visiable with a maximum of a single click or without any clicking.</ol></br>&nbsp; &nbsp; &nbsp; &nbsp;The <i>Unlocked License</i> uses predetermined clauses to consider if the license and the use of the license is valid. To determine if this license is valid follow these stimpulations, which are as follows:<ol>Credit to the previous workers, builders, originators and others involved with the web object/app/page/document and it's content before & of the current version of the web object/app/page/document & content must be visiable without any clicking, hiding behind any button, object, terms of service, conditions, terms, color-blending, background hiding, font color hiding or otherwise that is not directly viewable by users.</ol><ol>This license must be visiable with a maximum of a single click mechanic, a single linked page (must be a direct to page or direct to file link) or directly on the page to the users.</ol></br>&nbsp; &nbsp; &nbsp; &nbsp;If this license is valid, then this web object/app/page/document & the use of this web object/app/page/document is allowed by this license. If this license is not valid, then the web object/app/page/document & use of this web object/app/page/document is not allowed. If the original credit & any additional credits are left in-tact and are visible as previously described in this license, then this license is valid. If this license is visible either through a single click mechanic, a single linked page (must be a direct to page or direct to file link) or directly on the page then this license is valid.</br></br>&nbsp; &nbsp; &nbsp; &nbsp;No user specific data is allowed to transfer to new users, owners, builders, creators or any other enitity, person, company, governemnt or electronic identity or intelligence. This license is over the usability and the web object/app/page/document itself not the user-specific data inputted, automated, generated  or processed from use of the web object/app/page/document. The user that inputs data as well as causes the creation of data through automation, generation, APIs or processing is for that user alone. This does not mark owners of data inputted, automated, generated, pulled in, proccessed or considered but does deny the builders, creators, hosts, interactors of the web object/app/page/document allowance of being called owners of any data inputted, automated, generated, pulled in, proccessed or considered through this or any future version of this web object/app/page/document. This license cannot be revoked, removed, changed or withdrawn without causing the license for that specific version of the web object/app/page/document. To stop using this license for future versions of the connected web object/app/page/document, you will have to create a new version of this web object/app/page/document without this license but must include that the new version is not an <i>Unlocked License Web Object</i> in a clear, readable format that's directly viewable by users without any clicking or hiding of any kind.</br></br>-<span id='dated'>2023</span>-
+   </p><button class="button2" onclick='document.getElementById("license").style="display:none";document.getElementById("openagreement").style="visibility:show;";' style="cursor:pointer"><h1>Agree & Close License</h1></button></br></br><span id="verifyhash" title="A verifying hash in SHA256 via md5hashing.net"><b>#<i>cbd5c42347ee9f042db019e9b8961bbc8f2bc2588c12d5a7ae3598974f1e4964</i></b></br></br></br></span>
+   </span>
+   
+   
+   
+</br></br></span>
+</div>
+</footer>  
+<!--  data storage -->
+<span id='sani' style='display:none'></span> <!--element id-->
+<span id='sano' style='display:none'></span> <!--onclick call-->
+<span id='sanp' style='display:none'></span> <!--element type-->
+<span id='sanu' style='display:none'></span> <!--placeholder of what's being changed-->
+<span id='brn' style='display:none'></span> <!--brnum (used as unique ids)-->
+<span id='where' style='display:none'></span> <!--which input-->
+
+<span id='what' style='display:none'></span> <!--after-insert-->
+<span id='tyu' style='display:none'></span> <!--thold, yhold, uhold?-->
+<span id='dummyinp' style='display:none'></span> <!--used for automated movement-->
+<span id='ghar' style='display:none'>0</span> <!--used for items-->
+<span id='ghar2' style='display:none'></span> <!--used for items-->
+<span id='bi' style='display:none'>0</span> <!--buyin automation-->
+<span id='jer' style='display:none'>1</span> <!--unique book/page number-->
+<span id='bookid' style='display:none'></span> <!--book identifier-->
+<span id='pageid' style='display:none'></span> <!--page identifier-->
+<span id='starttype' style='display:none'>0</span> <!--start type-->
+<span id='sci' style='display:none'>0</span> <!--exchange wallet-->
+<span id='gh2' style='display:none'></span> <!--used for debugging-->
+
+<span id='drugbox' style='display:none;'></span> <!--the list showing on DoH list -->
+<span id='drugfill' style='display:none;'></span> <!--the amounts of DoH drug list -->
+<span id='drugswap' style='display:none;'></span> <!--hot-swappable drug hold -->
+<span id='trunkbox' style='display:none;'></span> <!--the list showing on Trunk List -->
+<span id='trunkfill' style='display:none;'></span> <!--the amounts of trunk drugs list -->
+<span id='merclist' style='display:none;'></span> <!--mercs ready for work-->
+<span id='mercbox' style='display:none;'></span> <!--mercs in battle-->
+<span id='mercfill' style='display:none;'></span> <!--merc cost percent-->
+<span id='landlist' style='display:none;'></span> <!--land available -->
+<span id='landcost' style='display:none;'></span> <!--land available cost -->
+<span id='landbox' style='display:none;'></span> <!--land owned -->
+<span id='landfill' style='display:none;'></span> <!--land owned vaule -->
+<span id='rivalbox' style='display:none;'></span> <!--Rival list-->
+<span id='rivalfill' style='display:none;'></span> <!--Rivals info list-->
+<span id='rivalswapbox' style='display:none;'></span> <!--Rival info on display-->
+<span id='gunbox' style='display:none;'></span> <!--owned guns (total)-->
+
+<span id='r1box' style='display:none;'></span> <!--r1-->
+<span id='r2box' style='display:none;'></span> <!--r2-->
+<span id='r3box' style='display:none;'></span> <!--r3-->
+
+<span id='hiddencash' style='display:none;'>1337</span><!-- this -->
+
+<span id='wealth' style='display:none;'>0</span> <!--user wealth (total cash)-->
+<span id='creditlimit' style='display:none;'>0</span> <!--user credit limit-->
+<span id='grossworth' style='display:none;'>0</span> <!--total gross worth (wealth + bank holding)-->
+<span id='debts' style='display:none;'>0</span> <!--current debt (total)-->
+<span id='networth' style='display:none;'>0</span> <!--total net worth (gross worth - debts)-->
+<span id='swappot' style='display:none;'></span> <!--wealth not in-control by user-->
+
+<span id='user' style='display:none;'></span> <!--user data-->
+<span id='creditreport' style='display:none'>0</span> <!-- user credit data-->
+<span id='miscbox' style='display:none'>0</span> <!-- user run loop-->
+<span id='selllist' style='display:none;'></span> <!--drugs user is selling-->
+
+<span id='market' style='display:none;'></span> <!--user market-->
+<span id='drugmarket' style='display:none;'></span> <!--drug market-->
+<span id='othermarket' style='display:none;'></span> <!--other market-->
+<span id='extramarket' style='display:none;'></span> <!--extra market data-->
+
+
+<span id='checkstart' style='display:none;'>0</span> <!--check for start-->
+
+ <script src="https://ipfs.io/ipfs/QmbegCCnE3RFReHYf45wCetXSKHVEy95bJruVpYkDDY8tm"></script>
+  <script>
+  "use strict";
+  
+ var datething = new Date();
+ var tstamp = datething.getTime();
+ document.getElementById('nyear').innerHTML = datething.getFullYear().toString().replace(/[^0-9]/gim,"");
+ document.getElementById('nyear2').innerHTML = datething.getFullYear().toString().replace(/[^0-9]/gim,"");
+ if(datething.getFullYear().toString().replace(/[^0-9]/gim,"") > "2023"){
+ document.getElementById('dated').innerHTML = "2023 - "+datething.getFullYear().toString().replace(/[^0-9]/gim,"");
+ } 
+ if(datething.getFullYear().toString().replace(/[^0-9]/gim,"") < "2023"){
+ document.getElementById('dated').innerHTML = datething.getFullYear().toString().replace(/[^0-9]/gim,"") + " - 2023";
+ }
+ else {
+ document.getElementById('dated').innerHTML = "2023";
+ }
+ 
+
+ 
+ 
+var cash = 0; 
+var debt = 0;
+var bank = 0;
+var credit = 0; 
+var trades = 0; 
+
+
+var wallet = 0;
+
+ 
+  var bin = document.getElementById('bi').innerHTML; //buy in automation
+  
+  //algo variables
+  var brnum = 0;
+  var yrnum = 0;
+  
+  var checkstart = document.getElementById('checkstart').innerHTML;
+  
+  
+  //user||action variables 
+  var weaponcount = 0;
+  var merccount = 0;
+  var landcount = 0;
+  var rivalcount = 0;
+  var dayis = 0;
+  var doh = 0; //number of hr's for drugs on hand side
+  var ts = 0;  //number of hr's for trucnk space side
+  
+  
+  
+  var miscin = 0;
+  var armcount = 0;
+  var defcount = 0;
+  
+  var points = 0;
+  var ringcount = 0;
+  var lacecount = 0;
+  var piercecount = 0;
+  var bangelcount = 0;
+  var roundsare = 0;
+  
+  var days = document.getElementById('dayof').innerHTML;
+  var nights = 0;
+  var hrs = 0;
+  var fullmoons = 0;
+  var twofouroverflow = 0;
+  
+  var greenstart = document.getElementById('starttype').innerHTML;
+  var ihash = '';
+  
+  var deboost = 0;
+  var rolldiff = 1;
+  var rollnext = 0;
+  
+  var tempspeed = 0;
+  var tempmove = 0;
+  
+ var boosttot = 0;
+ var boosttoted = 0;
+ var savemod = 0;
+ 
+ var remjewel = 0;
+ var newspell = 0;
+ var theme = 0;
+  
+  
+  
+  <!--algo below-->
+  
+  var lvl = 0; //level
+  var inspired = 0; 
+  var exp = 0; //experience
+  var expdif = 0;
+  var att = 0; //attack points
+  var def = 0; //defense points
+  var spd = 0; //speed (player order in rounds)
+  var mve = 0; //move actions
+  var wieght = 0; //carry ability
+  
+  var skillwatch = 0; //skilllvl difficulty
+  var spellwatch = 0; //spelllvl difficulty
+  
+ var boosted = 0; //skillboost
+ var muscle = 0; //strength
+ var phydex = 0; //dexterity
+ var mendex = 0; //wisdom
+ var constit = 0; //constitution
+ var intel = 0; //intelligence
+ var charisma = 0; //charisma
+ 
+ var hp = 0; //initiavtive
+ var thp = 0; //health (ynm)
+ var thpnum = 0; //health#num (ynm)
+ 
+ 
+ var colorday = "blue";
+ 
+ 
+var subdays = 0, subcheck = 0;
+
+
+<!-- initial functions below -->
+
+function thisdays(){ <!-- days system-->
+ //days = Number(days) + 1; //only for testing
+hrs = Number(hrs) + Number(1.7142857142);
+if(hrs >= 24){
+ days = Number(days) + 1;
+ hrs = Number(hrs) - 24;
+if(hrs > 18){
+nights = Number(nights) + 1;
+}
+ }
+ 
+ <!--full moon determiner-->
+if(subdays === 0){
+ subcheck = Math.trunc(Number(subcheck) + 1);
+
+ if(subcheck === 28){
+  subdays = 1;
+  subcheck = 0;
+ }
+ else{
+  subdays = 0;
+ }
+}
+else if(subdays === 1){
+ twofouroverflow = Number(twofouroverflow) + 1;
+ subdays = 0;
+}
+ 
+// livestats();
+
+if(hrs >= 0 && hrs <= 6){
+ colorday = "blue";
+}
+else if(hrs > 6 && hrs < 12){
+ colorday = "orange";
+}
+else if(hrs >= 12 && hrs < 18){
+ colorday = "yellow";
+}
+else if(hrs >= 18 && hrs <= 21){
+ colorday = "purple";
+}
+else{
+ colorday = "dimgrey";
+}
+
+if(twofouroverflow >= 2){
+ fullmoons = Number(fullmoons) + 1;
+ twofouroverflow = Math.abs(Number(twofouroverflow) - 1.5);
+}
+if(twofouroverflow === 1.5){
+ fullmoons = Number(fullmoons) + 1;
+ twofouroverflow = Math.abs(Number(twofouroverflow) - 1.5);
+}
+
+ document.getElementById('leftofday').innerHTML = Math.trunc(days) + "<span style='color:" + colorday + ";'>.</span><span id='daycolor' style='color:" + colorday + ";'>" + Math.trunc(hrs) + "</span>";
+// document.getElementById('stats').style='cursor:help;inline-block;';
+
+<!--credit checker-->
+var creditin = document.getElementById('creditreport').innerHTML
+var credit = document.getElementById('credit').innerHTML;
+
+if(creditin > 0){
+ credit = Math.trunc(Number(credit) + Number(creditin));
+ document.getElementById('creditreport').innerHTML = 0;
+ document.getElementById('credit').innerHTML = credit;
+}
+
+var checkrun = document.getElementById('miscbox').innerHTML;
+var checkbuy = 1;
+<!-- open market buyer -->
+
+
+if(document.getElementById('hiddencash').innerHTML > 0){  //credit gets added to creditreport during hourly check //bug
+
+//single partial buys (so no buy at all) still pays out to the user //bug 
+
+if(miscbox === 0){ <!--initial run-->
+ checkbuy = Math.trunc(Math.random()*4);
+}
+else if(miscbox === 1){<!--multi-loop run-->
+ checkbuy = Math.trunc(Math.random()*8);
+}
+else if(miscbox > 1){<!--high plyaer run-->
+ checkbuy = Math.trunc(Math.random()*25);
+}
+
+if(checkbuy === 4 || checkbuy === 9 || checkbuy > 23){<!--inital win condition-->
+ autobuy();
+}
+
+else if(checkbuy = Math.trunc(Math.random()*16)+3) {<!-- 'Blue-Moon' catch check...if these match, let it slide by-->
+ autobuy();
+}
+
+}//end check for wally
+else if(document.getElementById('hiddencash').innerHTML < 0){
+ document.getElementById('hiddencash').innerHTML = 0;
+}
+ 
+document.getElementById('display').innerHTML = '';   
+document.getElementById('output').innerHTML = ''; <!-- good spot for daily spot stats -->
+
+ startcheck();
+
+<!-- hourly timer -->
+setTimeout(thisdays, 28000); //600000 === 10 min   //30000 === testing timer
+}
+
+
+
+function livestats(){
+document.getElementById('statout').innerHTML = "<div width:90%></br><h2 align='center'><b>Days Active: "+days+"</b></h2><h3 align='center'><i><sup>Nights Survived: "+nights+"</sup></br>Active Hours: "+hrs+"</i></h3></hr><h2>Player Health: "+hp+"</br>Force Strength: "+defcount+"</br>Lands Owned: "+landcount+"</h3><h4>Actions Taken: "+roundsare+"</h4></br></div>";
+}
+
+
+<!-- standard user action buttons below -->
+function lend(){ //overlending happens too often for comfort      //bug
+                       //make overlending cause credit eating (if they have credit <!-- a main cause of this bug-->)
+ var cash = document.getElementById('cash').innerHTML;
+ var debt = document.getElementById('debt').innerHTML;
+ var bank = document.getElementById('bank').innerHTML;
+ var credit = document.getElementById('credit').innerHTML;
+ var cr = document.getElementById('creditreport').innerHTML;
+ 
+var qn = Number(Math.abs(Math.floor((Math.random()*10)+1)*10));
+var qt = Number(Math.abs(Math.floor((Math.random()*10)+1)*100));
+
+var debtcheck = Math.trunc(Math.abs(Number(bank) + Math.abs(Number(credit) + Number(cash))));
+var ddd = document.getElementById('dayof').innerHTML;
+var percent = Math.trunc(15 + Number(ddd)); <!-- interest changes based on length in game -->
+var debtinst = Math.trunc(Number(debt)%Number(percent));  
+
+//document.getElementById('men').innerHTML = debtcheck; //test output
+
+if(debtcheck < debt && debt > 0){
+ 
+ 
+ document.getElementById('output').innerHTML = "Debts need to be less then wealth to get a loan";
+
+}
+
+else if(Number(debt) === 0){ //no debts
+ debt = Number(debt) + Number(qt);
+ bank = Number(bank) + Number(qt);
+
+}
+
+else if(Number(debtcheck) === Number(debt) || Number(debtcheck) > Number(debt)){   //debts less than wealth
+ debtinst = Math.trunc(Number(debt)%Number(percent));
+ debt = Math.trunc((Number(debt) + Number(qt)) + Number(debtinst));
+ bank = Math.trunc(Number(bank) + (Number(qt) - Number(debtinst)));   //you have to pay part of the interest upfront
+ 
+
+ cr = Number(cr) + Math.trunc(Number(debtinst)/2);    //you get a portion of your upfront-payment as credit 
+}
+
+else if(Number(debtcheck) < Number(bank) && Number(bank) > 0){  //debts less then bankroll 
+ debtinst = Math.trunc(Number(debt)%Number(percent));
+ debt = Math.trunc((Number(debt) + Number(qt)) + Number(debtinst));
+ bank = Math.trunc(Number(bank) + (Number(qt) - Number(debtinst)));   //you have to pay part of the interest upfront
+ 
+ cr = Number(cr) + Math.trunc(Number(debtinst) - Math.trunc(Number(debtinst)/2)); //you get about half of your upfront-payment as credit 
+}
+ 
+else if(Number(credit) > Number(debt) && Number(credit) >= Number(debtcheck)){   //debts less then raw credit
+ debtinst = Math.trunc(Number(debt)%Number(percent));
+ debt = Math.trunc((Number(debt) + Number(qt)) + Number(debtinst));
+ bank = Math.trunc(Number(bank) + (Number(qt) - Number(debtinst)));   //you have to pay part of the interest upfront
+
+ cr = Number(cr) + Math.trunc(Number(debtinst)/3);    //you get a third of your upfront-payment as credit 
+
+}
+ 
+else if(Number(debtcheck) < 0){
+var ggg = document.getElementById('output').innerHTML;
+
+if(ggg.length > 0){
+ document.getElementById('output').innerHTML = "";
+}
+ else{
+ document.getElementById('output').innerHTML = "Debts need to be less then wealth to get a loan";
+ }
+
+}
+ 
+ document.getElementById('cash').innerHTML = cash;
+ document.getElementById('bank').innerHTML = bank;
+
+ if(cr > 0){
+document.getElementById('creditreport').innerHTML = cr;
+}
+ document.getElementById('debt').innerHTML = debt;
+ 
+ 
+ startcheck();
+}
+
+
+
+function buy(){
+ var cash = document.getElementById('cash').innerHTML;
+ var debt = document.getElementById('debt').innerHTML;
+ var bank = document.getElementById('bank').innerHTML;
+ var credit = document.getElementById('credit').innerHTML;
+ var cr = document.getElementById('creditreport').innerHTML;
+ 
+var ddd = document.getElementById('dayof').innerHTML;
+var percent = Math.trunc(15 + Number(ddd)); <!-- interest changes based on length in game -->
+var debtinst = Math.trunc(Number(debt)%Number(percent));  
+var adjust = Math.trunc(Number(debtinst)/2);
+
+
+
+ 
+if(bank > 0){
+ cash = Number(cash) + (Number(bank) - Number(debtinst));
+ bank = (Number(bank) - Number(bank));
+ cr = (Number(cr) + Number(adjust));
+ debt = (Number(debt) + Number(adjust));
+ 
+ if(cr > 0){
+document.getElementById('creditreport').innerHTML = cr;
+}
+ document.getElementById('cash').innerHTML = cash;
+ document.getElementById('bank').innerHTML = bank;
+ document.getElementById('debt').innerHTML = debt;
+ 
+ startcheck();
+ 
+//document.getElementById('men').innerHTML = adjust;   //test display
+}
+
+else {
+var ggg = document.getElementById('output').innerHTML;
+
+if(ggg.length > 0){
+ document.getElementById('output').innerHTML = "";
+}
+ else {
+  document.getElementById('output').innerHTML = "Need Fiat to get Cash";
+ }
+
+}
+
+}
+
+
+
+function sell(){
+ var cash = document.getElementById('cash').innerHTML;
+ var debt = document.getElementById('debt').innerHTML;
+ var bank = document.getElementById('bank').innerHTML;
+ var credit = document.getElementById('credit').innerHTML;
+ 
+var ddd = document.getElementById('dayof').innerHTML;
+var percent = Math.trunc(15 + Number(ddd)); <!-- interest changes based on length in game -->
+var debtinst = Math.trunc(Number(debt)%Number(percent));  
+var adjust = Math.trunc(Number(debtinst)/2);
+
+if(cash > 0){
+ credit = (Number(credit) + Number(cash));
+ cash = (Number(cash) - Number(cash));
+ debt = (Number(debt) + Number(adjust));
+
+ document.getElementById('cash').innerHTML = cash;
+ document.getElementById('bank').innerHTML = bank;
+ document.getElementById('credit').innerHTML = credit;
+ document.getElementById('debt').innerHTML = debt;
+ 
+ startcheck();
+ 
+//document.getElementById('men').innerHTML = adjust;   //test display
+}
+
+else {
+var ggg = document.getElementById('output').innerHTML;
+
+if(ggg.length > 0){
+ document.getElementById('output').innerHTML = "";
+}
+ else {
+  document.getElementById('output').innerHTML = "Need Cash to buy Credit";
+ }
+
+}
+
+
+}
+
+
+function payoff(){   //error here, paying off paid debts gives free credit   //bug
+
+ var cash = document.getElementById('cash').innerHTML;
+ var debt = document.getElementById('debt').innerHTML;
+ var bank = document.getElementById('bank').innerHTML;
+ var credit = document.getElementById('credit').innerHTML;
+ var cr = document.getElementById('creditreport').innerHTML;
+ 
+var ddd = document.getElementById('dayof').innerHTML;
+var percent = Math.trunc(15 + Number(ddd)); <!-- interest changes based on length in game -->
+var debtinst = Math.trunc(Number(debt)%Number(percent));  
+var adjust = Math.trunc(Number(debtinst)/2);
+var w = Math.trunc(Number(cash) + Number(bank));
+
+
+if(Number(cash) >= Number(debt) && Number(bank) < Number(cash) && Number(debt) > 0){ //pay all in cash, get extra credit
+ cash = Math.trunc(Number(cash) - Number(debt));
+ debt = Math.trunc(Number(debt) - Number(debt));
+ 
+ document.getElementById('display').innerHTML = 'Debt Paid in Full, Creditors will be pleased to hear';
+ 
+ cr = Math.trunc(Number(cr) + Math.trunc(Number(adjust)));
+}
+
+else if(Number(bank) >= Number(debt) && Number(cash) < Number(bank) && Number(debt) > 0){ //pay all in bankroll, get some credit
+ bank = Math.trunc(Number(bank) - Number(debt));
+ debt = Math.trunc(Number(debt) - Number(debt));
+ 
+ document.getElementById('display').innerHTML = 'Debt Paid, a Good Report was sent to your Creditor';
+ 
+ cr = Math.trunc(Number(cr) + Math.trunc(Number(adjust)/2));
+}
+
+else if(Number(w) > Number(debt) && Number(w) > 0 && Number(debt) > 0){  //all wealth to pay off, get less credit
+ cash = Math.trunc(Math.trunc(Number(cash) - Number(debt)));
+ 
+ var tempdebt = Math.trunc(Math.trunc(Number(debt) - Number(cash)));
+ if(cash < 0){
+  bank = Math.trunc(Math.trunc(Number(bank) + Number(cash)));
+  cash = 0;
+ }
+ else if(tempdebt < 0){
+  bank = Math.trunc(Math.trunc(Number(bank) - Number(tempdebt)));
+  
+ }
+ else{
+  bank = Math.trunc(Math.trunc(Number(bank) - Number(tempdebt)));
+ }
+ debt = Math.trunc(Number(debt) - Number(debt));
+ 
+ document.getElementById('display').innerHTML = 'Debt Paid, Credit report sent';
+ 
+ cr = Math.trunc(Number(cr) + Math.trunc(Number(adjust)/3));
+}
+
+else if(Number(w) < Number(debt) && Number(w) > 0 && Number(debt) > 0){  //can't pay off entirely, get least credit 
+ 
+ 
+ cash = Math.trunc(Number(cash) - Number(cash));
+ bank = Math.trunc(Number(bank) - Number(bank));
+ debt = Math.trunc(Number(debt) - Number(w));
+ 
+ 
+ document.getElementById('display').innerHTML = 'Some of your Debts have been paid....';
+ 
+ cr = Math.trunc(Number(cr) + Math.trunc(Number(adjust)/9));
+}
+
+
+else if(Number(w) === 0 || Number(w) < 0){
+var ggg = document.getElementById('output').innerHTML;
+
+if(ggg.length > 0){
+ document.getElementById('output').innerHTML = "";
+}
+ else {
+  document.getElementById('output').innerHTML = "Need Money to Pay-off Loans";
+ }
+
+
+}
+
+else {
+ document.getElementById('buttond').disabled = true;
+ if(Math.trunc(Math.trunc(Math.random()*10)+1) > 8 || Math.trunc(Math.trunc(Math.random()*4)+1) > 3){
+ document.getElementById('display').innerHTML = "Don't send empty transactions";
+ }
+ else{
+ document.getElementById('display').innerHTML = "No Debt to payoff...";
+ }
+}
+
+
+
+if(cash.toString().search('-') !== "-1"){
+ cash = cash.toString().replace('-', ''); //changed from funds = 0 to fix lost funds when paying more than debt
+}
+if(bank.toString().search('-') !== "-1"){
+ bank = bank.toString().replace('-', ''); //could be used to reverse steal funds from air
+}
+
+ document.getElementById('cash').innerHTML = cash;
+ document.getElementById('debt').innerHTML = debt;
+ document.getElementById('bank').innerHTML = bank;
+ 
+ 
+ if(cr > 0){
+document.getElementById('creditreport').innerHTML = cr;
+}
+
+ startcheck();
+
+}
+
+
+
+<!-- Market click actions below -->
+
+function buydrug(){   // sometimes autobuy will add to the total instead of lower the total and then it'll just endlessly buy wihtout taking form wally  //bug 
+ var diq = document.getElementById('drugswap').innerHTML; //drug-in-question
+ var cash = document.getElementById('cash').innerHTML;
+ var bank = document.getElementById('bank').innerHTML;
+ 
+ var damount = diq.replace('(', '').split(')')[0];
+ var dname = diq.split(')')[1].split('[')[0];
+ var dprice = diq.split('[')[1].replace(']', '');
+ var w = Number(cash) + Number(bank);
+ var numcheck = Math.trunc(Number(w)/Number(dprice));    <!--if greater than 1, more than can purshable-->
+ var overflow = Math.trunc(Number(w) - Number(dprice)); <!--if neg, can't purchase 1-->
+
+if(Number(overflow) < 0){ <!-- buy is cancelled because cannot afford it-->
+  document.getElementById('marketlist').innerHTML += "<span id='"+dname+"' class='drug' title='Click to Sell Out' onclick='document.getElementById(&#039;drugswap&#039;).innerHTML += this.innerHTML;this.remove();buydrug();' >("+Math.round(damount*10)/10+")"+dname+"["+dprice+"]</span>";
+  
+//document.getElementById('output').innerHTML = overflow;  //testing buy drug bug
+}
+
+ 
+else if(Number(numcheck) >= Number(damount) && Number(damount) > 0){
+     <!-- we can afford all of what's available -->
+ var buyup = Math.trunc(Number(w) - Math.trunc(Number(dprice)*Number(numcheck))); <!--if more than one buying -->
+ 
+ cash = Number(cash) - Number(buyup);
+ 
+ 
+ if(Number(cash) < 0 && Number(bank) > Number(cash)){
+    <!--need to dip into bank-->
+  bank = Math.trunc(Number(bank) + Number(cash));<!-- the overflow is the neg amount -->
+  cash = 0; <!-- adjust for expected outcome-->
+ }
+ else{
+   if(document.getElementById('hiddencash').innerHTML < 0){
+    document.getElementById('hiddencash').innerHTML = 0;
+   }
+ }
+ 
+ damount = Number(damount) - Number(numcheck);
+ 
+ if(Number(damount) < 0 && Number(numcheck) > Number(damount)){
+       <!--over-amount spotted-->
+  numcheck = Number(numcheck) + Number(damount); <!--adjust for offset amount of neg-->
+  buyup = Math.trunc(Number(buyup)+(Math.trunc(Number(damount.toString().replace('-', ''))*Number(dprice)))); <!--return the overpay-->
+  damount = 0;  <!-- adjust to expected outcome -->
+ }
+ 
+ 
+ 
+   document.getElementById('trunklist').innerHTML += "<span id='"+dname+"' class='drug' title='Click to Sell Out' onclick='document.getElementById(&#039;drugswap&#039;).innerHTML += this.innerHTML;this.remove();selldrug();' >("+Math.trunc(Math.round(numcheck*10)/10)+")"+dname+"["+dprice+"]</span>";
+   
+   var jim = document.getElementById('hiddencash').innerHTML;
+   document.getElementById('hiddencash').innerHTML = Math.trunc(Number(jim) + Math.trunc(Number(dprice)*Number(numcheck)));
+   
+   if(document.getElementById('hiddencash').innerHTML < 0){
+    document.getElementById('hiddencash').innerHTML = 0;
+   }
+   
+   <!-- numcheck get's adjusted to be what we get from the buy -->
+   <!-- damount is remainder of what's on open market -->
+   
+  
+}
+
+else if(Number(numcheck) < Number(damount) && Number(damount) > 0){
+     <!-- we can afford some or at least 1 of what's available -->
+   var grosscheck = Math.trunc(Number(damount) - Number(numcheck)); <!-- how many won't be bought-->
+   
+ if(Number(grosscheck) < 0 && Number(numcheck)){
+       <!--over-amount spotted-->
+  numcheck = Number(numcheck) + Number(grossamount); <!--adjust for offset amount of neg-->
+  damount = Math.trunc(Number(damount)+(Math.trunc(Number(grossamount.toString().replace('-', ''))*Number(dprice)))); <!--return the overpay-->
+  grossamount = 0;  <!-- adjust to expected outcome -->
+ }
+ 
+ var tempy = Math.trunc(Number(numcheck)*Number(dprice));
+ 
+ cash = Number(cash) - Number(tempy);
+ 
+ if(Number(cash) < 0 && Number(bank) > Number(cash)){
+    <!--need to dip into bank-->
+  bank = Math.trunc(Number(bank) + Number(cash));<!-- the overflow is the neg amount -->
+  cash = 0; <!-- adjust for expected outcome-->
+ }
+ 
+ damount = Number(grosscheck);
+ 
+ 
+ <!--check if this drug is on other list-->
+ var checking = document.getElementById(dname);
+ 
+ if(checking !== null){
+ var namer = checking.innerHTML.replace('(', '').split(')')[0];
+ 
+ 
+if(Number(namer) > 0){
+ numcheck = Number(numcheck) + Number(namer);
+ 
+ document.getElementById(dname).remove();
+} 
+
+}
+
+   document.getElementById('trunklist').innerHTML += "<span id='"+dname+"' class='drug' title='Click to Sell Out' onclick='document.getElementById(&#039;drugswap&#039;).innerHTML += this.innerHTML;this.remove();selldrug();' >("+Math.trunc(Math.round(numcheck*10)/10)+")"+dname+"["+dprice+"]</span>";
+   
+   
+  if(Number(damount) > 0){<!-- return excess to marketlist -->
+ 
+   
+ document.getElementById('marketlist').innerHTML += "<span id="+dname+" class='drug' title='Click&nbsp;to&nbsp;Buy&nbsp;Up' onclick='document.getElementById(&#034;drugswap&#034;).innerHTML = this.innerHTML;this.remove();buydrug();' >("+Math.round(damount*10)/10+")"+dname+"["+dprice+"]</span>";
+  
+  }
+  
+   var jim = document.getElementById('hiddencash').innerHTML;
+   document.getElementById('hiddencash').innerHTML = Math.trunc(Number(jim) + Math.trunc(Number(dprice)*Number(numcheck)));
+   
+   
+  }
+  
+  
+ //document.getElementById('output').innerHTML = damount + " " + dname + " at, " + dprice + "/unit</br>" + diq;  //test output
+ 
+ document.getElementById('cash').innerHTML = cash;
+ //document.getElementById('credit').innerHTML = credit;
+ document.getElementById('bank').innerHTML = bank;
+
+ document.getElementById('drugswap').innerHTML = '';
+ 
+ startcheck();
+}
+
+
+
+function selldrug(){
+ var diq = document.getElementById('drugswap').innerHTML; //drug-in-question
+ var damount = diq.replace('(', '').split(')')[0];
+ var dname = diq.split(')')[1].split('[')[0];
+ var dprice = diq.split('[')[1].replace(']', '');
+ 
+ dprice = Number(dprice) + Math.trunc(Math.round(Math.abs(dprice/4)*10)/10); <!-- add your margin-->
+ 
+ 
+ document.getElementById('marketlist').innerHTML += "<span id='"+dname+"onsale' class='forsale' title='Selling to Potential Buyers...' onclick='document.getElementById(&#039;drugswap&#039;).innerHTML += this.innerHTML;this.remove();repass();' >("+damount+")"+dname+"["+dprice+"]</span>";
+ 
+ //document.getElementById('output').innerHTML = damount + " " + dname + " at, " + dprice + "/unit</br>" + diq;  //test output
+ document.getElementById('selllist').innerHTML += dname + "," + damount + "," + dprice + ";";
+ document.getElementById('drugswap').innerHTML = '';
+
+ startcheck();
+}
+
+function repass(){
+ var diq = document.getElementById('drugswap').innerHTML; //drug-in-question
+ var damount = diq.replace('(', '').split(')')[0];
+ var dname = diq.split(')')[1].split('[')[0];
+ var dprice = diq.split('[')[1].replace(']', '');
+ 
+ var newinside = '<span id=&#039;'+dname+'&#039; class=&#039;drug&#039; title=&#039;Click&nbsp;to&nbsp;Sell&nbsp;Out&#039; onclick=&#039;document.getElementById(&#039;drugswap&#039;).innerHTML = this.innerHTML;this.remove();selldrug();&#039;>('+damount+')'+dname+'['+dprice+']</span>';
+
+ document.getElementById('trunklist').innerHTML += "<span id="+dname+" class='drug' title='Click&nbsp;to&nbsp;Sell&nbsp;Out' onclick='document.getElementById(&#034;drugswap&#034;).innerHTML = this.innerHTML;this.remove();selldrug();' >("+damount+")"+dname+"["+dprice+"]</span>";
+ 
+ 
+ //document.getElementById('output').innerHTML = damount + " " + dname + " at, " + dprice + "/unit</br>" + diq;  //test output
+ 
+ document.getElementById('drugswap').innerHTML = '';
+ 
+ 
+ startcheck();
+}
+
+
+
+
+
+ 
+ 
+ <!-- automated functions below-->
+ 
+ function autobuy(){
+   var wally = document.getElementById('hiddencash').innerHTML;
+   var ddd = document.getElementById('dayof').innerHTML;
+   
+//this doesn't work for some reason::: document.querySelectorAll('#forsale')[0].getAttribute('id');
+
+  var listraw = document.getElementById('selllist').innerHTML;
+  var huh = "00", v = 1, b = 0, c = 1;
+  var newlist = [], namelist = [], amountlist = [], pricelist = [];
+ 
+  
+for(var i=0;i<(Number(huh.length)+1);i++){ <!--setup list to be usable-->
+  huh = listraw.search(';');
+  
+  if(huh > 0){
+   var one = listraw.split(';')[i];
+       huh = listraw.split(';')[v];
+  }
+  
+  newlist.push(one); <!--useable list of purchasble drugs-->
+  
+  var t1 = newlist.toString().split(/\,/g)[b];
+  namelist.push(t1); <!--drug names-->
+  b = Number(b)+1;
+  
+  var t2 = newlist.toString().split(/\,/g)[b];
+  amountlist.push(t2); <!--drug amounts-->
+  b = Number(b)+1;
+  
+  var t3 = newlist.toString().split(/\,/g)[b];
+  pricelist.push(t3); <!--drug prices-->
+  b = Number(b)+1;
+
+  v = Number(v)+1;
+}
+
+  
+//for(var q = 0;q<i;q++){ //old for
+  var q = 0;
+  do{ //autobuy overbuy without enough funds in hiddencash will gift the value of the total sale to the user...   //bug
+  <!-- may need to figure out a break procedure to skip this function if hidden cash is less than (tprice*tamount) when tamount > 0-->
+  wally = document.getElementById('hiddencash').innerHTML;
+  
+  
+  var tname = namelist[q];
+  var tprice = pricelist[q];
+  var tamount = amountlist[q];
+  var checknow = Number(tprice)*Number(tamount);
+  
+  var diff = Math.trunc(Math.round(Math.abs(Number(wally)/Number(tprice))*10)/10); <!-- if pos, at least 1 buy possible -->
+  var howmuch = Math.trunc(Math.round(Math.abs(Number(tamount)*Number(diff))*10)/10); <!-- this tells us how many we can but -->
+  var oldmuch = tamount;  <!-- preserved for edge-cases -->
+  <!--tamount may be adjusted on the fly-->
+  
+  
+ var whiff = document.getElementById(tname + "onsale");
+	
+ if(whiff !== null || whiff != null){<!--drug seen on list must be present in marketlist to perform function-->
+	
+  <!-- if wally can buy all of this drug-->
+   if(wally >= checknow){
+    wally = Number(wally) - Number(checknow);
+	document.getElementById('hiddencash').innerHTML = wally;
+  wally = document.getElementById('hiddencash').innerHTML; <!--refresh wally-->
+	
+	 document.getElementById(tname + "onsale").remove();
+
+	 document.getElementById('selllist').innerHTML = listraw.replace(namelist[q]+','+amountlist[q]+','+pricelist[q]+';', '');
+	 
+	
+	var bank = document.getElementById('bank').innerHTML;
+	document.getElementById('bank').innerHTML = Math.trunc(Number(bank) + Number(checknow));
+   }
+   
+   
+  <!--if wally can buy some of this drug-->
+   else if(Number(checknow) > Number(wally) && Number(wally) > 0){
+   wally = document.getElementById('hiddencash').innerHTML;
+   
+    if(Number(diff) >= 1){
+     tamount = Math.trunc(Math.round(Math.abs(Number(tamount) - Number(howmuch))*10)/10);
+     wally = Math.trunc(Number(wally) - Number(Math.trunc(Math.round(Math.abs(Number(tprice)*Number(diff))*10)/10)));
+	 document.getElementById('hiddencash').innerHTML = wally; 
+  wally = document.getElementById('hiddencash').innerHTML; <!--refresh wally-->
+	
+	
+	  document.getElementById(tname + "onsale").remove();
+	  
+
+	 document.getElementById('selllist').innerHTML = listraw.replace(tname+','+oldmuch+','+tprice+';', namelist[q]+','+tamount+','+pricelist[q]+';');
+	 
+	
+	  document.getElementById('marketlist').innerHTML += "<span id='"+tname+"onsale' class='forsale' title='Selling to Potential Buyers...' onclick='document.getElementById(&#039;drugswap&#039;).innerHTML += this.innerHTML;this.remove();repass();' >("+tamount+")"+tname+"["+tprice+"]</span>";
+	
+	 
+	 }
+	 else{
+	  var gggg = document.getElementById('hiddencash').innerHTML;
+	  
+	  if(Number(document.getElementById('miscbox').innerHTML) === 0){
+       document.getElementById('hiddencash').innerHTML = Math.trunc(Number(gggg) + 1);	
+	   //this only happens at this point during inital play though
+	   }
+	   else{
+       document.getElementById('hiddencash').innerHTML = Number(gggg);	 
+	   }
+	 }
+	 document.getElementById('selllist').innerHTML = listraw.replace(namelist[q]+','+tamount+','+pricelist[q]+';', '');
+	
+	}
+	
+	else if(Number(wally) < 0 || Number(wally) === 0){
+  document.getElementById('hiddencash').innerHTML = 0; <!--refresh wally-->
+   wally = document.getElementById('hiddencash').innerHTML; <!--refresh wally-->
+	 document.getElementById('selllist').innerHTML = listraw.replace(namelist[q]+','+tamount+','+pricelist[q]+';', '');
+	}
+	
+	
+	}
+	else if(Number(wally) < Number(Math.trunc(tamount*tprice))){
+	 document.getElementById('hiddencash').innerHTML = Math.trunc(Number(wally)+Math.trunc(1*Number(ddd))+1); //unusal possibility
+	}
+	else{<!--could not find drug on marketlist so it's removed from the selllist here-->
+	 document.getElementById('selllist').innerHTML = listraw.replace(namelist[q]+','+tamount+','+pricelist[q]+';', '');
+	}
+	
+	
+  q = Number(q) + 1;
+} while (q<i);  //end of old for or do while
+
+   <!-- the percentage of buy possibility should be dynamic and get easier the longer in the game but harder if in a second or multi-loop game (change-gang, retire are multi-loop games) -->
+ 
+ 
+ //if there isn't enough funds in wally to buy 1 of the top drug for sale will just give player the funds as if the drug was purchsed  //bug 
+ }
+ 
+ 
+ 
+ 
+ function startcheck(){ 
+ 
+ <!--below is startcheck initial-service-->
+ var checkstart = document.getElementById('checkstart').innerHTML;
+ var cash = document.getElementById('cash').innerHTML;
+ var bank = document.getElementById('bank').innerHTML;
+ var credit = document.getElementById('credit').innerHTML;
+ var debt = document.getElementById('debt').innerHTML;
+ var w = Math.trunc(Number(bank) + Number(cash) + Number(credit));
+ 
+ 
+ if(cash >= 0){  <!--controller of "sell" button-->
+ document.getElementById('buttonc').disabled = false;
+ }
+ else{
+ document.getElementById('buttonc').disabled = true;
+ }
+ 
+ 
+ if(debt >= 0){  <!--controller of "Return" button-->
+ document.getElementById('buttond').disabled = false;
+ }
+ else{
+ document.getElementById('buttond').disabled = true;
+ }
+ 
+ if(bank >= 0){  <!--controller of "Buy" button-->
+ document.getElementById('buttona').disabled = false;
+ }
+ else {
+ document.getElementById('buttona').disabled = true;
+ }
+ 
+ if(w >= debt){  <!--controller of "Borrow" button-->
+ document.getElementById('buttonb').disabled = false;
+ }
+ else{
+ document.getElementById('buttonb').disabled = true;
+ }
+ 
+ 
+ 
+ if(checkstart < 1){
+ 
+  startgame();
+ 
+ }
+ else {
+ 
+ }
+ 
+ var merc = document.getElementById('men').innerHTML;
+ var weaponcount = document.getElementById('guns').innerHTML;
+ //var drugopen = document.getElementById('drugbox').innerHTML;
+ var trunkspace = document.getElementById('trunkrow').innerHTML;
+ var rival = document.getElementById('rivalbox').innerHTML;
+ 
+ if(weaponcount > 0 || merc > 0){
+  document.getElementById('button1').disabled = false;
+   if(cash > 0 || bank > 0){
+    document.getElementById('button3').disabled = false;
+   }
+   else{
+    document.getElementById('button3').disabled = true;
+   }
+ }
+ else{
+  document.getElementById('button1').disabled = true;
+ }
+ 
+ if(trunkspace.length >= 1){
+  document.getElementById('button2').disabled = false;
+ }
+ else{
+  document.getElementById('button2').disabled = true;
+ }
+
+ }
+ 
+ 
+ function startgame(){
+ document.getElementById('checkstart').innerHTML = 1;
+ 
+ document.getElementById('daytext').style='visibility:show';
+ 
+ thisdays();
+ 
+ document.getElementById('guns').innerHTML=Number(1);
+ document.getElementById('men').innerHTML=Number(1);
+ weaponcount=weaponcount+1;
+ document.getElementById('display').innerHTML='Welcome On HIDDEN_USER';
+ 
+// var locnum = document.getElementById('loc').innerHTML; <!-- location based maketmaking-->
+ //var locs = Math.trunc(locnum * 2);  <!-- location based maketmaking-->
+  //var numof = Math.trunc(Math.random()*Number(locs))+1; <!-- location based maketmaking-->
+ 
+ var numof = Math.trunc(Math.random()*Math.trunc((Math.random()*8)+1))+1;
+ 
+ 
+ for(var i=0;i<numof;i++){
+  marketmaker(); 
+ }
+ 
+ var holdon = Math.trunc(Math.random()*Math.trunc((Math.random()*4)+1))+1;
+ 
+ for(var i=0;i<holdon;i++){
+  trunkfiller();
+ }
+ 
+ 
+ //document.getElementById('output').innerHTML = numof;
+ 
+  //document.getElementById('startgame').style.display='none';
+ }
+ 
+ 
+ 
+ function marketmaker(){
+ var nolist1 = [];
+ var nolist2 = [];
+ var nolist3 = [];
+ 
+ var d1 = document.getElementById('r1box').innerHTML;
+ var d2 = document.getElementById('r2box').innerHTML;
+ var d3 = document.getElementById('r3box').innerHTML;
+ 
+ var dname = ['Marijuana', 'hash', 'weed', 'hash oil', 'Marinol', 'CBD', 'K2', 'Spice', 'Canned-Air', 'Nitrous Oxide', 'Heroin', 'Hydrocodone', 'vicodin', 'Morphine', 'Oxycotin', 'Percodan', 'Methadone', 'Codine', 'PCP', 'Ketamine', 'DXM', 'LSD', 'Ecstasy', 'Peyote', 'Psilocybin', 'Magic Truffles', 'Cocaine', 'Crack', 'Meth', 'Adderall', 'Ritalin', 'Dexedrine', 'Bath Salts', 'Alcohol', 'Booze', 'Valium', 'Prozac', 'Xanax', 'Soma', 'Roofy', 'GHB', 'Crocidilian', 'Zombie-Drug', 'Russian Cold-Flu', 'Radioactive Pills'];
+ 
+ var damount = ['0.1', '0.25', '0.5', '0.9', '1', '1.1', '1.2', '1.3', '1.5', '1.7', '2', '2.1', '2.5', '3', '3.5', '5', '7.5', '10', '12.5', '15', '20', '25', '33', '48', '50', '64', '87', '101', '109', '113', '131', '150', '177', '200', '225', '250', '300', '350', '500', '750', '800', '900', '1000'];
+ 
+ var dprice = ['5', '10', '20', '25', '30', '45', '50', '60', '75', '100', '125', '150', '200', '250', '275', '300', '350', '400', '500', '750', '881', '900', '936', '1080', '1113', '1280', '1337', '1350', '1400', '1500', '1750', '2000'];
+ 
+ var r1 = dname.length;
+ var r2 = damount.length;
+ var r3 = dprice.length;
+ 
+ 
+do{
+ var rng1 = Math.trunc(Math.random()*(r1));
+}
+while (d1.toString().search(rng1) >= 0);
+
+ document.getElementById('r1box').innerHTML += rng1;
+ 
+ for(var i = 0;i<d1.length;i++){
+ var temp1 = d1[i];
+  nolist1.push(temp1);
+ }
+ 
+ 
+do{
+ var rng2 = Math.trunc(Math.random()*(r2));
+}
+while (d2.toString().search(rng2) >= 0);
+
+ document.getElementById('r2box').innerHTML += rng2;
+ 
+ for(var i = 0;i<d2.length;i++){
+ var temp2 = d2[i];
+  nolist2.push(temp2);
+ }
+ 
+ document.getElementById('r2box').innerHTML += rng2;
+ 
+ 
+do{
+ var rng3 = Math.trunc(Math.random()*(r3));
+}
+while (d3.toString().search(rng3) >= 0);
+
+ document.getElementById('r3box').innerHTML += rng3;
+ 
+ for(var i = 0;i<d3.length;i++){
+ var temp3 = d3[i];
+  nolist3.push(temp3);
+ }
+ 
+ document.getElementById('r3box').innerHTML += rng3;
+ 
+ temp1 = '', temp2 = '', temp3 = '';
+ 
+ document.getElementById('marketlist').innerHTML += "<span id="+dname[rng1]+" class='drug' title='Click&nbsp;to&nbsp;Buy&nbsp;Up' onclick='document.getElementById(&#034;drugswap&#034;).innerHTML = this.innerHTML;this.remove();buydrug();' >("+damount[rng2]+")"+dname[rng1]+"["+dprice[rng3]+"]</span>";
+ 
+ var dday = document.getElementById('dayof').innerHTML;
+ 
+ if(dday < 0){
+  dday = 0;
+ }
+ if(dday === "NaN" || dday === NaN){<!-- most likely this will be skipped but jic-->
+  dday = 0;
+ }
+ 
+   var jim = document.getElementById('hiddencash').innerHTML;
+   document.getElementById('hiddencash').innerHTML = Math.trunc(Number(jim) + Math.trunc(Number(dday)*Number(1))+1);
+   
+ }
+ 
+ function trunkfiller(){
+ var nolist1 = [];
+ var nolist2 = [];
+ var nolist3 = [];
+ 
+ var d1 = document.getElementById('r1box').innerHTML;
+ var d2 = document.getElementById('r2box').innerHTML;
+ var d3 = document.getElementById('r3box').innerHTML;
+ 
+ var dname = ['Marijuana', 'hash', 'weed', 'hash oil', 'Marinol', 'CBD', 'K2', 'Spice', 'Canned-Air', 'Nitrous Oxide', 'Heroin', 'Hydrocodone', 'vicodin', 'Morphine', 'Oxycotin', 'Percodan', 'Methadone', 'Codine', 'PCP', 'Ketamine', 'DXM', 'LSD', 'Ecstasy', 'Peyote', 'Psilocybin', 'Magic Truffles'];
+ 
+ var damount = ['0.1', '0.25', '0.5', '0.9', '1', '1.1', '1.2', '1.3', '1.5', '1.7', '2', '2.1', '2.5', '3', '3.5', '5', '7.5', '10', '12.5', '15', '20'];
+ 
+ var dprice = ['5', '10', '20', '25', '30', '45', '50', '60', '75', '100', '125'];
+ 
+ var r1 = dname.length;
+ var r2 = damount.length;
+ var r3 = dprice.length;
+ 
+ 
+do{
+ var rng1 = Math.trunc(Math.random()*(r1));
+}
+while (d1.toString().search(rng1) >= 0);
+
+ document.getElementById('r1box').innerHTML += rng1;
+ 
+ for(var i = 0;i<d1.length;i++){
+ var temp1 = d1[i];
+  nolist1.push(temp1);
+ }
+ 
+ 
+do{
+ var rng2 = Math.trunc(Math.random()*(r2));
+}
+while (d2.toString().search(rng2) >= 0);
+
+ document.getElementById('r2box').innerHTML += rng2;
+ 
+ for(var i = 0;i<d2.length;i++){
+ var temp2 = d2[i];
+  nolist2.push(temp2);
+ }
+ 
+ document.getElementById('r2box').innerHTML += rng2;
+ 
+ 
+do{
+ var rng3 = Math.trunc(Math.random()*(r3));
+}
+while (d3.toString().search(rng3) >= 0);
+
+ document.getElementById('r3box').innerHTML += rng3;
+ 
+ for(var i = 0;i<d3.length;i++){
+ var temp3 = d3[i];
+  nolist3.push(temp3);
+ }
+ 
+ document.getElementById('r3box').innerHTML += rng3;
+ 
+ temp1 = '', temp2 = '', temp3 = '';
+ 
+ 
+ document.getElementById('trunklist').innerHTML += "<span id="+dname[rng1]+" class='drug' title='Click&nbsp;to&nbsp;Sell&nbsp;Out' onclick='document.getElementById(&#034;drugswap&#034;).innerHTML = this.innerHTML;selldrug();this.remove();' >("+damount[rng2]+")"+dname[rng1]+"["+dprice[rng3]+"]</span>";
+ 
+ }
+
+  
+  
+ </script>
+ 
+ <script src="https://ipfs.io/ipfs/QmbegCCnE3RFReHYf45wCetXSKHVEy95bJruVpYkDDY8tm"></script>
+   
+ <script>
+
+ function nextfun(){ 
+ 
+ 
+document.getElementById('shareon').innerHTML = '<div>Grabbing your Hashlink will only contain the most previous saved data so if you&#039;ve added or changed anything, save before getting the share link (via TinyURL)</div></br><form align="center" action="https://tinyurl.com/create.php" method="post" target="_blank"><table align="center" style="background-color:inhert;"><tr><td><input id="urlinp"  name="url" placeholder="Paste your Hashlink!" onfocusout="sharecheck()" style="width:auto" /></td><td><button id="submit" class="button" style="cursor:pointer;width:auto;display:none;" type="submit" name="submit" disabled>Get Share Link!</button></td></tr></table></form>';
+
+document.getElementById('themes').innerHTML = '</br><button class="button2" id="2theme" style="display:inline-block;align:center;" onclick="this.style=&#039;display:none&#039;;document.getElementById(&#039;1theme&#039;).style=&#039;display:inline-block&#039;;document.getElementById(&#039;main&#039;).style=&#039;background-color:rgb(249,251,255);color:rgb(13,19,26);border-color:rgb(245,242,232);left:0;align:left:width:100%;text-align:center;&#039;;"><h1>Paper Theme</h1></button><button class="button2" id="1theme" style="display:inline-block;align:center;" onclick="this.style=&#039;display:none&#039;;document.getElementById(&#039;2theme&#039;).style=&#039;display:inline-block&#039;;document.getElementById(&#039;main&#039;).className=&#039;display:inline-block&#039;;document.getElementById(&#039;main&#039;).style=&#039;background-color:black;color:silver;border-color:dimgrey;left:0;align:left:width:100%;text-align:center;&#039;;theme=0;" style="display:none"><h1>Night Theme</h1></button></br>';
+
+ 
+ a = document.querySelector('a'); LZMA.compress(a.outerHTML, 9, function(r) {a.innerText = a.href = 'https://itty.bitty.site/#'+document.getElementById("maintxt").innerHTML+'/?' + btoa(String.fromCharCode.apply(null, new Uint8Array(r)))});
+
+
+ }
+ 
+ </script>
+ </div>
+ </body>
+ </html>
+  </a>
+  
