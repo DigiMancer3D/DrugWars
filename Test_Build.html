@@ -1069,6 +1069,9 @@ var checkbuy = 1;
 
 if(document.getElementById('hiddencash').innerHTML > 0){  //credit gets added to creditreport during hourly check //bug
 let miscbox = parseInt(document.getElementById('miscbox').innerHTML, 10) || 0; // Fix NaN
+let hiddencash = parseInt(document.getElementById('hiddencash').innerHTML, 10) || 0;
+if (hiddencash < 0) document.getElementById('hiddencash').innerHTML = '0';
+
 //single partial buys (so no buy at all) still pays out to the user //bug 
 
 if(miscbox === 0){ <!--initial run-->
@@ -1100,6 +1103,7 @@ document.getElementById('output').innerHTML = ''; <!-- good spot for daily spot 
  startcheck(); //front check 
 
 if (to1) clearTimeout(to1);
+
 to1 = setTimeout(slowcheck1, 963) ; //to1;
 
 document.getElementById('loop').innerHTML = to1;
@@ -1144,6 +1148,7 @@ clearTimeout(to1);
  document.getElementById('drm0').innerHTML = Math.trunc(Number(drmcheck) + 1);
 
  if (to1) clearTimeout(to1);
+
  to1 = setTimeout(slowcheck1, 936); 
 }  
 
@@ -1155,6 +1160,7 @@ clearTimeout(to1);
  startcheck();
 
  if (to1) clearTimeout(to1);
+
  to1 = setTimeout(slowcheck1, 936); 
 }
 
@@ -1170,6 +1176,7 @@ document.getElementById('display').innerHTML = '';
 
 
  if (to1) clearTimeout(to1);
+
 to1 = setTimeout(nothisdays, 936) ; //to1;
 document.getElementById('loop').innerHTML = to1;
 
@@ -1193,6 +1200,7 @@ clearTimeout(to1);
 
 
  if (to1) clearTimeout(to1);
+
  to1 = setTimeout(slowcheck1, 936); 
 
 }
@@ -1209,6 +1217,7 @@ startcheck();
 var lp = document.getElementById('loop').innerHTML.toString().slice(';')[0];
 
  if (to1) clearTimeout(to1);
+
 to1 = setTimeout(slowcheck2, 936) ; //to1;
 document.getElementById('loop').innerHTML = Number(lp) + to1;
 
@@ -1243,6 +1252,7 @@ clearTimeout(to1);
  document.getElementById('drm1').innerHTML = Math.trunc(Number(drm) + 1);
 
  if (to1) clearTimeout(to1);
+
  to1 = setTimeout(slowcheck2, 936); //20000 === 10 min //10000 testing timer
 }  
 
@@ -1254,6 +1264,7 @@ clearTimeout(to1);
  startcheck();
 
  if (to1) clearTimeout(to1);
+
  to1 = setTimeout(slowcheck2, 936); 
 }
 
@@ -1271,6 +1282,7 @@ document.getElementById('display').innerHTML = '';
 var lp = document.getElementById('loop').innerHTML.toString().slice(';')[0];
 
  if (to1) clearTimeout(to1);
+
 to1 = setTimeout(stillnot, 936) ; //to1;
 document.getElementById('loop').innerHTML = Number(lp) + to1;
 
@@ -1294,6 +1306,7 @@ clearTimeout(to1);
 
 
  if (to1) clearTimeout(to1);
+
  to1 = setTimeout(slowcheck2, 936); 
 
 }
@@ -1321,6 +1334,7 @@ else if(merc < mercout){
 
 
  if (to1) clearTimeout(to1);
+
 to1 = setTimeout(thisdays, 936);
 
 }
@@ -4272,6 +4286,7 @@ if(ddd < 1){ //failsafe
  var r2 = damount.length;
  var r3 = dprice.length;
  let attempts = 0;
+ let attempts2 = 0;
  
  
 do{
@@ -4281,6 +4296,8 @@ do{
 
   if (attempts > 100) { // Prevent infinite loop
     console.error("Exhausted options for rng1");
+    document.getElementById('rbox').innerHTML = '';  // Reset to allow reuse
+    nolist = [];  // Clear no-list too
     break;
   }
 
@@ -4305,6 +4322,15 @@ while (d1.toString().search(rng1) >= 0);
  
 do{
  var rng2 = Math.trunc(Math.random()*(r2));
+
+ attempts2++;
+
+  if (attempts2 > 100) {
+    console.warn("Exhausted drug amounts in trunkfiller – resetting pool");
+    document.getElementById('r2box').innerHTML = '';  // Reset to allow reuse
+    nolist2 = [];  // Clear no-list too
+    break;
+  }
 }
 while (d2.toString().search(rng2) >= 0);
 
@@ -4386,10 +4412,13 @@ while (d3.toString().search(rng3) >= 0);
  var r2 = damount.length;
  var r3 = dprice.length;
  let attempts = 0;
+ let attempts2 = 0;
  
  
 do{
  var rng1 = Math.trunc(Math.random()*(r1));
+ document.getElementById('rbox').innerHTML = '';  // Reset to allow reuse
+    nolist = [];  // Clear no-list too
 
  attempts++;
 
@@ -4418,6 +4447,15 @@ while (d1.toString().search(rng1) >= 0);
  
 do{
  var rng2 = Math.trunc(Math.random()*(r2));
+
+ attempts2++;
+
+  if (attempts2 > 100) {
+    console.warn("Exhausted drug amounts in trunkfiller – resetting pool");
+    document.getElementById('r2box').innerHTML = '';  // Reset to allow reuse
+    nolist2 = [];  // Clear no-list too
+    break;
+  }
 }
 while (d2.toString().search(rng2) >= 0);
 
@@ -4490,6 +4528,7 @@ while (d3.toString().search(rng3) >= 0);
  var r1 = rivalname.length;
  var r2 = rivalcolor.length;
  let attempts = 0;
+ let attempts2 = 0;
 
  var r3 = Math.trunc(Math.abs(Math.random()*Math.abs(3*rs))+Math.trunc(ddd+1));
  
@@ -4500,7 +4539,8 @@ do{
  attempts++;
 
   if (attempts > 100) { // Prevent infinite loop
-    console.error("Exhausted options for rng1");
+    console.error("Exhausted options for rng1");document.getElementById('rbox').innerHTML = '';  // Reset to allow reuse
+    nolist2 = [];  // Clear no-list too
     break;
   }
 }
@@ -4523,6 +4563,15 @@ while (d1.toString().search(rng1) >= 0);
  
 do{
  var rng2 = Math.trunc(Math.random()*(r2));
+
+ attempts2++;
+
+  if (attempts2 > 100) {
+    console.warn("Exhausted drug amounts in trunkfiller – resetting pool");
+    document.getElementById('r2box').innerHTML = '';  // Reset to allow reuse
+    nolist2 = [];  // Clear no-list too
+    break;
+  }
 }
 while (d2.toString().search(rng2) >= 0);
 
@@ -4547,9 +4596,13 @@ while (d2.toString().search(rng2) >= 0);
  
  
  document.getElementById('rivalbox').innerHTML +=  "</br>Name: " + rivalname[rng1] + "</br>Color: " + rivalcolor[rng2] + "</br>Force: " + r3;
- 
+ if (document.getElementById('rivalbox').innerHTML.length > 10000) {
+  document.getElementById('rivalbox').innerHTML = document.getElementById('rivalbox').innerHTML.slice(-5000);  // Trim to last 5k chars
+}
   document.getElementById('output').innerHTML +=  "</br>Name: " + rivalname[rng1] + "</br>Color: " + rivalcolor[rng2] + "</br>Force: " + r3;
- 
+ if (document.getElementById('output').innerHTML.length > 10000) {
+  document.getElementById('output').innerHTML = document.getElementById('output').innerHTML.slice(-5000);  // Trim to last 5k chars
+}
  }
 
   
